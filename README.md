@@ -10,5 +10,10 @@ O software foi criado com a intenção de monitorar quem iniciou o computador em
 
 <br />
 
-## Exemplo de um Email de Monitoramento 📩
+## Exemplo de um Email do Monitoramento 📧
+
+<p align="center" >
+  <img src="https://raw.githubusercontent.com/Davi4076018/Webcam_de_Monitoramento_Via_Email/main/readme-images/Exemplo%20de%20Email.PNG" />
+</p>
+
  
