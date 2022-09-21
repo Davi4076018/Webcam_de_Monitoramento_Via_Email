@@ -1,6 +1,6 @@
 <br />
 
-ATENÇÃO: a divulgação do código neste site é meramente educativa. O que você, usuário, faz com ele, é de sua integral responsabilidade. A única finalidade da criação do software é a de garantir a segurança do hardware pessoal do indivíduo, e nada mais.
+<img src="https://raw.githubusercontent.com/Davi4076018/Webcam_de_Monitoramento_Via_Email/main/readme-images/aviso.png" />
 
 <br />
 
