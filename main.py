@@ -2,6 +2,7 @@ from win32com.client import Dispatch
 import os
 import cv2
 import smtplib
+from subprocess import check_output
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
@@ -81,6 +82,16 @@ def ChecaConexaoNet():
 
 while not(ChecaConexaoNet()):
     time.sleep(1)
+# localiza se o wifi é do tipo "login"
+outputinter = str(check_output('netsh wlan show interfaces', shell=True), 'latin1').split("\n")
+for x in range(len(outputinter)):
+    if outputinter[x].find('Autentica') >= 1:
+        estado = outputinter[x][outputinter[x].find(':') + 2:]
+try:
+    if(estado == "Abrir"):
+        time.sleep(60)
+except:
+    pass
 CriaInicializador()
 FotoAtualdaWebcam()
 EnviaEmailComImage()
